@@ -1,0 +1,4 @@
+taskName: Techincal Round taskStatus: TO_DO task due date: 2018-11-25 Project Name: Interviews 
+taskName: Submit IP project taskStatus: DONE task due date: 2018-10-12 Project Name: Novare 
+taskName: Listen to Course taskStatus: IN_PROGRESS task due date: 2018-11-26 Project Name: Software Academy 
+taskName: Kanban Board taskStatus: DONE task due date: 2018-10-12 Project Name: JavaEE Project 
