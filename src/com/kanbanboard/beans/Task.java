@@ -1,16 +1,36 @@
 package com.kanbanboard.beans;
 
-import java.util.Date;
+import java.sql.Date;
 
-public class Task {
+/**
+ * Class Task - a Task in To-Do Application.
+ *
+ * This class is part of the "To-Do" application. 
+ *
+ * A "Task" is unique in scope of a project and can contain numerous tasks.
+ * 
+ * @author  Sudha Madhulika Vecha
+ * @version 2018.10.12
+ */
+
+public class Task implements Comparable<Task>	 {
 	private String taskName;
 	private Date dueDate;
 	private Project p;
-    private String taskStatus;
-	
-	private enum taskStatus{
-		TO_DO, STARTED, IN_PROGRESS, DONE
+	private String taskStatus;
+	private int taskId;
+
+	public int getTaskId() {
+		return taskId;
 	}
+
+	public void setTaskId(int taskId) {
+		this.taskId = taskId;
+	}
+
+	//	private enum taskStatus{
+	//		TO_DO, STARTED, IN_PROGRESS, DONE
+	//	}
 
 	public String getTaskName() {
 		return taskName;
@@ -44,5 +64,9 @@ public class Task {
 		this.taskStatus = taskStatus;
 	}
 
+	public int compareTo(Task task) {
+		return this.getDueDate().compareTo(task.getDueDate());
+
+	}
 
 }
