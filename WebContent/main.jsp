@@ -75,7 +75,7 @@ please select the task status :
 <option value="DONE"> DONE </option>
 </select> <br/>
 
-date:
+due date:
 <input type="text" id="datepicker" name="dueDate" readonly="readonly"> <br/>
 
 
