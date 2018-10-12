@@ -43,3 +43,17 @@ On click of Return Home Page hyperlink, user returns to the home page where the 
 
 #CLASS DIAGRAM
 Class diagram is located in classdiagram.jpg in the images folder of WebContent directory
+
+#MySQL
+MySQL dump file is located in WebContent folder named todo_list_backup.sql 
+Inorder to test it in J2EE environment having MySQL as database, please follow the below steps
+
+Download MySQL 8.0.12 and Install it. Download JDBC driver and add it to the build path
+After connecting to the MySQL database, Create the following database.
+CREATE DATABASE ToDoList;
+
+Go to directory where you have todo_list_backup.sql file
+sudo /usr/local/mysql/bin/mysqldump -u root -p ToDoList < todo_list_backup.sql
+With that, your chosen database has been imported into your destination database in MySQL.
+
+
